@@ -1,12 +1,12 @@
 package ru.geekbrains.java;
 
 class Person {
-    private static String name;
-    private static String position;
-    private static String email;
-    private static String telephone;
-    private static double salary;
-    private static int age;
+    private String name;
+    private String position;
+    private String email;
+    private String telephone;
+    private double salary;
+    private int age;
 
     public Person(String name, String position, String email, String telephone, double salary, int age) {
         this.name = name;
@@ -17,11 +17,11 @@ class Person {
         this.age = age;
     }
 
-    static int getAge() {
+    int getAge() {
         return age;
     }
 
-    public static void prnPerson() {
+    public void prnPerson() {
         System.out.println(name + " " + position + " " + email + " " + telephone + " " + salary + " " + age);
     }
 }
@@ -36,9 +36,9 @@ public class Main {
         personsArray[4] = new Person("Ivanyan Van", "Engineer", "iivan@mailbox.com", "892312317", 40000, 53);
 
 
-        for (Person i : personsArray) {
-        if (i.getAge() > 40) {
-            i.prnPerson();
+        for (Person item : personsArray) {
+        if (item.getAge() > 40) {
+            item.prnPerson();
          }
        }
     }
