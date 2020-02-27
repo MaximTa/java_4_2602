@@ -27,7 +27,7 @@ class Person {
 }
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) { //Задание4
         Person[] personsArray = new Person[5];
         personsArray[0] = new Person("Ivanov Ivan", "Engineer", "ivivan@mailbox.com", "892312312", 30000, 30);
         personsArray[1] = new Person("Ivanova Ivanka", "Tester", "ivivanka@mailbox.com", "892312314", 35000, 60);
@@ -37,8 +37,9 @@ public class Main {
 
 
         for (Person i : personsArray) {
-        if (i.getAge() > 40)
+        if (i.getAge() > 40) {
             i.prnPerson();
+         }
        }
     }
 }
